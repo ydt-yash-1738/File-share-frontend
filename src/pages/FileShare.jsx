@@ -89,6 +89,7 @@ import { useRef, useState, useEffect } from "react";
 import { uploadFile } from '../services/api.js';
 import background from '../assets/scenery.jpg'; // Import the background image
 import owlImage from '../assets/owl.png'; // Import the owl image
+import { useNavigate } from "react-router-dom";
 
 function Share() {
   const [file, setFile] = useState("");
@@ -96,6 +97,7 @@ function Share() {
   const [fileName, setFileName] = useState(""); // State to hold the name of the uploaded file
   const [copied, setCopied] = useState(false); // State to track whether the link has been copied
   const fileinputRef = useRef();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getImage = async () => {
@@ -138,6 +140,7 @@ function Share() {
     setResult("");
     setFileName("");
     setCopied(false);
+    navigate("/");
   };
 
   return (
