@@ -9,7 +9,7 @@ export default function SignUp() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
-  const API_URL = 'https://file-share-backend-x6yn.onrender.com';
+  const API_URL = 'https://file-share-backend-iha5.onrender.com';
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
