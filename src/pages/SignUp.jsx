@@ -36,7 +36,7 @@ export default function SignUp() {
     }
   };
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black px-6">
+    <div className="min-h-screen flex items-center justify-center bg-black px-6 pt-16">
       <div className="bg-white/10 shadow-lg rounded-2xl p-10 w-full max-w-xl text-center border border-white/20 transition-transform transform hover:scale-105">
         <h1 className="text-4xl font-bold text-center my-6 text-white drop-shadow-lg">
           Sign Up
